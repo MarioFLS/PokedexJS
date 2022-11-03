@@ -9,8 +9,6 @@ const requestPokemon = async (url) => {
   const response = await (await fetch(url)).json();
   const { sprites, types } = response;
 
-  console.log(types[0].type.name);
-
   return {
     image: sprites.other['home'].front_default,
     type: types[0].type.name,

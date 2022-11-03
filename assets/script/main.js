@@ -1,5 +1,4 @@
 const pokemonList = document.getElementById('pokemonList');
-console.log(pokemonList);
 
 const createListPokemon = async () => {
   const pokemons = await fetchAPI();
@@ -28,7 +27,6 @@ const createListPokemon = async () => {
       pokemonList.appendChild(divPokemon);
     })
   );
-  console.log(pokemons);
 };
 
 window.onload = async () => createListPokemon();
