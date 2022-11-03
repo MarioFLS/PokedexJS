@@ -6,6 +6,11 @@
   list-style: none;
 }
 
+#title {
+  text-align: center;
+  font-size: 5em;
+}
+
 .normal {
   background-color: #a6a877;
 }
